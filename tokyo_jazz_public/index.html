@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tokyo_jazz</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokyo_jazz.css">
+
+</head>
+<body>
+<div class="body">
+  <header>
+  <div class="header-top">
+    <img class="header-icon"src="img/icon/header_icon.png" alt="">
+    <input class="bgm_onoff" type="button" id="sound_off" value="BGM_on/off">
+    <div class="header-ul">
+    <nav>
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#where">WHERE TO GO?</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav></div>
+  </div>
+</header>
+   
+<top>
+  <div class="top">
+    <div><h>音で飛ぶ。ジャズの新体験。</h></div>
+    <video class="top_vd" src="img/tokyo_jazz.mov" width=1200px preload="none" autoplay loop muted></video>
+    <div><h2><span id="bgm_play">Produced by</span> Koichi Hatakeyama
+    <audio id="sound_file" preload="auto">
+    <source src="img/song.mp3" type="audio/mp3"></audio></h2></div>
+  </div>
+
+  <div class="top_title" id="about">  
+    <span class="sa sa--up"><div class="about_img"><img src="img/icon/about.png"></div></span>
+    <span class="sa sa--up"><div class="title_img"></div></span>
+    <span class="sa sa--up"><div class="title_img2"></div></span>
+    <div class="about_text">
+      <span class="sa sa--up">
+        <h>いま、ここでしかできない体験を。</h></span>
+        <p>
+      <span class="sa sa--up">
+        スマホをひらけば、いつでも好きな場所で音楽を聴ける。</br></span>
+      <span class="sa sa--up">
+        でもその場所で聴くから、体験が変わることもある。</br>
+        その場所で演奏するから、体験が変わることだってある。
+      </br>　　
+      </br></span>
+      <span class="sa sa--up">
+        たとえば旅先で、見知らぬお店の客席で聴いた音、</br>
+        演奏で出会った人たちは、かけがえのない思い出になるだろう。</br>
+       </span>
+      <span class="sa sa--up">
+        　　</br>
+        SESSION IKITAI _ TOKYOは、ジャズだけにとらわれないセッションの遊び場を</br>
+        集めてパッケージすることで「聴くだけに終わらない物語」をつなげていくプロジェクト。</br></span>
+      <span class="sa sa--up">
+      　　</br>
+        それは、音楽を「聴く」から「感じる」へふくらませる壮大な実験だ。</br>
+        そしてこれは偉人たちから次世代のアーティストへの、継承という名のバトンでもある。</br>
+      </span>
+      <span class="sa sa--up">
+      　　</br>
+      この体験を通じて、どうかこの物語を一緒に繋げていってほしい。</br></span>
+      <span class="sa sa--up">
+        いつか出会った音楽が、あなたの毎日のテーマソングになることを願って。</br></br></span>
+        <span class="sa sa--up">
+        音楽という体験のある毎日へ、ようこそ。</p></span>
+    </div>
+    </div>
+  </div>
+</top>
+
+<about>
+<div class="about">
+  <img src="img/icon/where_icon.png" id="where">
+  <div class="shinjuku">
+  <div class="sa sa--up">
+    <a href="tokyo_jazz_shinjuku.html">
+    <img class="hover10" src="img/shinjuku.png" alt=""></a>
+    </div>
+    <h>SESSION ✖︎ SHINJUKU</h>
+  </div>
+
+  <div class="shibuya">
+  <div class="sa sa--up">
+    <a href="tokyo_jazz2.html">
+    <img class="hover10" src="img/shibuya.png" alt=""></a>
+    </div>
+    <h>SESSION ✖︎ SHIBUYA</h>
+  </div>
+
+  <div class="free_map">
+    <div class="sa sa--up">
+      <a href="tokyo_jazz_free.html">
+      <img class="hover10" src="img/freemap.png" alt=""></a>
+      </div>
+      <h>オリジナルMAPをつくる</h>
+  </div>
+</div>
+</about>
+<div class="about_space"></div><!--position absoluteの穴埋め。消さない。-->
+
+<contact>
+<div class="contact" id="contact">
+<img src="img/icon/contact_icon.png">
+<p>セッションバーはいきものと同じ。常に変化をしています。</br>
+新しい情報、不適切な情報などありましたらお知らせください。</br>
+　　</br>
+その他、お問い合わせもお気軽にどうぞ。お待ちしております。</p>
+</div>
+
+<div class="form_box">
+<dl><dt >名前</dt>
+<dd class="dd"><input class="input" type=“text” name=“name”></dd></dl>
+
+<dl><dt>カナ</dt>
+<dd class="dd"><input class="input" type=“text” name="name_kana"></dd></dl>
+
+<dl><dt>メールアドレス</dt>
+<dd><input class="input" type=“email” name=“email”></dd></dl>
+
+<dl class="dl"><dt class="dt"><p>
+セッションイキタイを</br>知ったきっかけ</p></dt>
+<dd class="dd"><input class="input" type=“text” name="kikkake"></dd></dl>
+<dl><dt>詳細</dt>
+<textarea class="textarea" name=“detail” id=“” cols=“30” row=“10”></textarea>
+</dl> 
+</div>
+
+<div class="sekai">
+<div class="sa sa--rl">
+  <p>一緒にセカイを驚かせましょう。</p></div></div>
+<div class="form_btn">
+  <div class="sa sa--up">
+  <a class="f_btn " href="#"><span>送信!</span></a></div>
+  </div>
+</form>
+</div>
+</contact>
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/tokyo_jazz2.js"></script>
+<script>
+$("#bgm_play").on("mouseover", function () {
+  $("#sound_file").get(0).play();
+});
+
+$("#sound_off").on("click", function () {
+  $("#sound_file").get(0).pause();
+});
+$("#sound_off").on("dblclick", function () {
+  $("#sound_file").get(0).play();
+});
+
+</script>
+</div>
+</body>
+
+<footer class="footer">
+<p class="footer_text">copylights 2020 Koichi Hatakeyama Rights Reserved .</p>
+</footer>
+
+</html>
