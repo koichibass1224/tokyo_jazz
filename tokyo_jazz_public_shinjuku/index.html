@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tokyo_jazz_shinjuku:area</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style_shinjuku.css">
+</head>
+
+<body>
+<div class="body">
+<div class="shinjuku_map">
+<div class="map_icon"><img src="img/icon/map_shinjuku_icon.png"></div>
+<a class="return_page" href="tokyo_jazz.html">トップに戻る</a>
+<div class="s_1"><img class="hover10" src="img/stores/dolcevita1.png"><a href="#dolce">大久保：cafe Dolce Vita</a></div>
+<div class="s_2"><img class="hover10" src="img/stores/goldenegg1.png"><a href="#egg">新宿：Golden egg</a></div>
+<div class="s_3"><img class="hover10" src="img/stores/intro1.png"><a href="#intro">高田馬場：Intro</a></div>
+<div class="s_4"><img class="hover10" src="img/stores/wjazz1.png"><a href="#wjazz">西荻窪：w-jazz</a></div>
+<div class="s_5"><img class="hover10" src="img/stores/zizi1.png"><a href="#zizi">西荻窪：zizi annabelle</a></div>
+<div class="s_6"><img class="hover10" src="img/stores/alt1.png"><a href="#alt">東中野：ALT SPEAKER></a></div>
+<div class="s_7"><img class="hover10" src="img/stores/something1.png"><a href="#something">池袋：something jazz club</a></div>
+<div class="s_8"><img class="hover10" src="img/stores/absoute1.png"><a href="#abso">池袋：absolute blue</a></div>
+
+<div class="sa sa--rl">
+<div class="behind" id="s_9">
+<div class="s_9"><img class="hover10" src="img/stores/cotton1.png"><a href="#cotton">new! 高田馬場：cotton club</a></div></div>
+</div></div>
+
+  <div class="about_shinjuku">
+  <p>雑多な繁華街：新宿を起点に</br>
+  中野から三鷹近辺までの中央線はミュージシャンの多く住む街としても知られている。</br>
+  そんなエリアの数ある中から有数のスポットをフォーカス。
+</p></div>
+
+<div class="form">
+  <div><img src="img/icon/anatano.png"><p id="score">　</p></div>
+  <div class="get_btn_box">
+  <input class="form_btn" type="button" id="get" value="記録を取得"></div>
+  <div class="clear_btn_box">
+  <input class="form_btn" type="button" id="reset" value="記録を消す"></div>
+</div>
+
+<audio id="check_sound" preload="auto">
+  <source src="img/ok.mp3" type="audio/mp3">
+</audio>
+<audio id="check_sound2" preload="auto">
+  <source src="img/no.mp3" type="audio/mp3">
+</audio>
+<audio id="check_sound3" preload="auto">
+  <source src="img/focus.mp3" type="audio/mp3">
+</audio>
+
+<div class="shinjuku_info">
+<div class="s_info">
+  <div class="s_img">
+    <a href="http://cafedolcevita.music.coocan.jp/dolcevita/">
+    <img class="hover10" src="img/stores/dolcevita2.JPG" alt=""></a>
+  </div>
+  <div class="info" id="dolce">
+  <h>大久保：cafe Doclce Vita（カフェ・ドルチェヴィータ）</h>
+  <h2>〒169-0074 東京都新宿区北新宿1-12−11</h2>
+  <p>料金：1,500＋1ドリンク　　定休日：カレンダーによる</p>
+  <p><span>赤本・青本と呼ばれるあのセッション本を執筆したのは実はここのオーナー。</br>夫婦の人柄が出た優しいお店。ときどきマスターはヴォーカル、奥さんは鍵盤で参加してくれる。</br>マスターはとにかく博識なので話を聞くだけでも価値あるかも。ジャンルもジャズからファンクまで幅広い。</span></p>
+</div>
+<div class="s_btn" id="check_sd_pl">
+  <input class="hover10" type="image" src="img/ikitai/ikitai.jpg" value="イキタイ" id="ikitai1" onclick="s_ikitai_check(1);">
+  <input class="hover10" type="image" src="img/ikitai/itta.jpg" value="イッタ" id="itta1" onclick="s_itta_check(1);">
+</div>
+</div>
+
+<div class="s_info" id="egg">
+  <div class="s_img">
+    <a href="https://www.g-egg.info/top.html">
+    <img class="hover10" src="img/stores/goldenegg2.jpg" alt=""></a>
+  </div>
+  <div class="info">
+  <h>新宿：Golden egg（ゴールデンエッグ）</h>
+  <h2>〒160-0021 東京都新宿区歌舞伎町1-16-10</h2>
+  <p>料金：1,500＋1ドリンク　　定休日：カレンダーによる</p>
+  <p><span>新宿歌舞伎町のど真ん中に位置する有名店。ファンク中心のイメージだが意外と歌謡曲等なんでもやっている。</br>常連客も多く、行くと高確率で東京という謎のオリジナルソングをやらされる。</span></p>
+</div>
+<div class="s_btn">
+  <input class="hover10" type="image" src="img/ikitai/ikitai.jpg" value="イキタイ" id="ikitai2" onclick="s_ikitai_check(2);">
+  <input class="hover10" type="image" src="img/ikitai/itta.jpg" value="イッタ" id="itta2" onclick="s_itta_check(2);">
+</div>
+</div>
+
+<div class="s_info" id="intro">
+  <div class="s_img">
+    <a href="https://jazzspot.intro.co.jp">
+    <img class="hover10" src="img/stores/intro2.jpg" alt=""></a>
+  </div>
+  <div class="info">
+  <h>高田馬場：Intro（イントロ）</h>
+  <h2>高田馬場2-14-8 地下1階 NTビル</h2>
+  <p>料金：イベントによる　　定休日：カレンダーによる</p>
+  <p><span>某大学の立地が近い為、ジャズ研出身者の登竜門となっているジャズの超有名店。</br>地下を潜った薄暗いところで行われるセッションはダウニーの極み。</br>ワンコインで２４時間セッションをやるなどだいぶクレイジーなので、ジャズフリークにはぜひ行っていただきたいスポット。</span></p>
+</div>
+<div class="s_btn">
+  <input class="hover10" type="image" src="img/ikitai/ikitai.jpg" value="イキタイ" id="ikitai3" onclick="s_ikitai_check(3);">
+  <input class="hover10" type="image" src="img/ikitai/itta.jpg" value="イッタ" id="itta3" onclick="s_itta_check(3);">
+</div>
+</div>
+
+<div class="s_info"  id="wjazz">
+  <div class="s_img">
+    <a href="https://wjazinfo.jimdo.com">
+    <img class="hover10" src="img/stores/wjazz2.jpg" alt=""></a>
+  </div>
+  <div class="info">
+  <h>西荻窪：wjazz（ダブジャズ）</h>
+  <h2>〒167-0053 東京都杉並区西荻南３丁目７−６ サンパレス西荻Ⅱ B-101</h2>
+  <p>料金：1,500＋2ドリンク　　定休日：カレンダーによる</p>
+  <p><span>プロからアマチュアまで集まる有名店。先代オーナーから引き継いだダンディなマスターが運営。</br>ファンク出身者はいかなくてはいけないマストスポット。</br>がちがちのプロですやん！な人も普通にいる。音響は抜群に良い。</span></p>
+</div>
+<div class="s_btn">
+  <input class="hover10" type="image" src="img/ikitai/ikitai.jpg" value="イキタイ" id="ikitai4" onclick="s_ikitai_check(4);">
+  <input class="hover10" type="image" src="img/ikitai/itta.jpg" value="イッタ" id="itta4" onclick="s_itta_check(4);">
+</div>
+</div>
+
+<div class="s_info" id="zizi">
+  <div class="s_img">
+    <a href="http://www.ziziannabelle.com">
+    <img class="hover10" src="img/stores/zizi2.jpg" alt=""></a>
+  </div>
+  <div class="info">
+  <h>西荻窪：zizi annabelle（ジジアンナベル）</h>
+  <h2>〒167-0054 東京都杉並区松庵３丁目３８−１４ 尾崎ダイヤビル</h2>
+  <p>料金：1,500＋2ドリンク　　定休日：カレンダーによる</p>
+  <p><span>ZiZiは音楽好きな女の子。Annabelleはアート好きな女の子。架空の２人の女の子の名前が店名の由来。</br>セッションジャンルはさまざま。入りやすい雰囲気がありとても居心地が良い。</br>客席よりカウンターのほうが大きく感じるのはなぜ？</span></p>
+</div>
+<div class="s_btn">
+  <input class="hover10" type="image" src="img/ikitai/ikitai.jpg" value="イキタイ" id="ikitai5" onclick="s_ikitai_check(5);">
+  <input class="hover10" type="image" src="img/ikitai/itta.jpg" value="イッタ" id="itta5" onclick="s_itta_check(5);">
+</div>
+</div>
+
+<div class="s_info" id="alt">
+  <div class="s_img">
+    <a href="http://altspeaker.com">
+    <img class="hover10" src="img/stores/alt2.jpeg" alt=""></a>
+  </div>
+  <div class="info">
+  <h>東中野：ALT SPEAKER（オルトスピーカー）</h>
+  <h2>〒164-0003東京都中野区東中野１-２５-１０ 大和ビル第１-１F </h2>
+  <p>料金：1,500＋1ドリンク　　定休日：カレンダーによる</p>
+  <p><span>喧騒を離れた静かな住宅地を抜けるとそこに見えたものは。。</br>ライトアップされた店内が外からも見えるのでとても雰囲気がある。</br>オーナーのご尊父が設計された店内は最高の音響を作り出す。ほどよい客数の箱で広くおすすめしたいお店。</span></p>
+</div>
+<div class="s_btn">
+  <input class="hover10" type="image" src="img/ikitai/ikitai.jpg" value="イキタイ" id="ikitai6" onclick="s_ikitai_check(6);">
+  <input class="hover10" type="image" src="img/ikitai/itta.jpg" value="イッタ" id="itta6" onclick="s_itta_check(6);">
+</div>
+</div>
+
+<div class="s_info" id="something">
+  <div class="s_img">
+    <a href="https://www.somethinjazz.com/jp/">
+    <img class="hover10" src="img/stores/something2.jpg" alt=""></a>
+  </div>
+  <div class="info">
+  <h>池袋：something Jazz club（サムシンジャズクラブ）</h>
+  <h2> 〒170-0014 東京都豊島区池袋１丁目８−８ 池袋労働基準協会ビルB1</h2>
+  <p>料金：2,000（フリードリンク）　　定休日：カレンダーによる</p>
+  <p><span>いわずとしれた名店。かつてはギラギラした肉弾系セッションが中心だったが、最近は落ち着きつつある。</br>B1はジャズ、B2はファンクに分かれる。教室もあるのでそのまま夜のセッションで実践、ということも出来る。</br>年中タンクトップのオーナー：スティーブは必見。以前は憧れのプレイヤーになぞらえマイルスカフェという名前だった。</span></p>
+</div>
+<div class="s_btn">
+  <input class="hover10" type="image" src="img/ikitai/ikitai.jpg" value="イキタイ" id="ikitai7" onclick="s_ikitai_check(7);">
+  <input class="hover10" type="image" src="img/ikitai/itta.jpg" value="イッタ" id="itta7" onclick="s_itta_check(7);">
+</div>
+</div>
+
+<div class="s_info" id="abso">
+  <div class="s_img">
+    <a href="http://absol.blue/#intro">
+    <img class="hover10" src="img/stores/absolute2.jpg" alt=""></a>
+  </div>
+  <div class="info">
+  <h>池袋：absolute blue（アブソリュートブルー）</h>
+  <h2>〒171-0021 東京都豊島区西池袋１丁目１５−６ 地下2階 豊島会館</h2>
+  <p>料金：イベントによる　定休日：カレンダーによる</p>
+  <p><span>しっかりした箱なのでライブというイメージが強いが、セッションも時折やっている。</br>Jinoさんなどスタープレイヤーと生でセッションできるイベントもあるので、ぜひスケジュールをチェック。</span></p>
+</div>
+<div class="s_btn">
+  <input class="hover10" type="image" src="img/ikitai/ikitai.jpg" value="イキタイ" id="ikitai8" onclick="s_ikitai_check(8);">
+  <input class="hover10" type="image" src="img/ikitai/itta.jpg" value="イッタ" id="itta8" onclick="s_itta_check(8);">
+</div>
+</div>
+
+<div class="behind" id="s_9_store">
+<div class="sa sa--rl">
+<div class="s_info" id="cotton">
+  <div class="s_img">
+    <a href="https://www.cafecottonclub.com/jazz/">
+    <img class="hover10" src="img/stores/cotton2.jpg" alt=""></a>
+  </div>
+  <div class="info">
+  <h>高田馬場：cotton club（コットン・クラブ）</h>
+  <h2>〒169-0075 東京都新宿区高田馬場１丁目１７−１４ ＳＯＵＮＤＳビル</h2>
+  <p>料金：イベントによる　定休日：カレンダーによる</p>
+  <p><span>かつてのintroの猛者たちが行き着いた、現段階アマチュアの最高峰セッションバー。</br>そこで繰り広げられるのは沈黙の死闘。うかつに楽器をもって入ったが最後、</br>そこは生きるか死ぬかのデスマッチであり、勝者だけが見られる景色がそこにはある。</span></p>
+</div>
+<div class="s_btn">
+  <input class="hover10" type="image" src="img/ikitai/ikitai.jpg" value="イキタイ" id="ikitai9" onclick="s_ikitai_check(9);">
+  <input class="hover10" type="image" src="img/ikitai/itta.jpg" value="イッタ" id="itta9" onclick="s_itta_check(9);">
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/tokyo_jazz_shinjuku.js"></script>
+<script src="js/tokyo_jazz2.js"></script>
+<script>
+$(".s_btn").on("click", function () {
+  $("#check_sound").get(0).play();
+});
+$(".s_btn").on("dblclick", function () {
+  $("#check_sound2").get(0).play();
+});
+$("#get , #reset").on("click", function () {
+  $("#check_sound3").get(0).play();
+});
+</script>
+</div>
+</body>
+
+<footer class="footer">
+<p class="footer_text">copylights 2020 Koichi Hatakeyama Rights Reserved .</p>
+</footer>
+
+</html>
